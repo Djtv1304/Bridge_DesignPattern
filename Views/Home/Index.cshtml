@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                @if (ViewBag.smallChurroFactory != null)
+                {
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="https://cafedelites.com/wp-content/uploads/2020/05/Churros-Recipe-IMAGE-124-1024x1536.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">@ViewBag.smallChurroFactory.typeOfChurro()</h5>
+                                <p class="card-text">@ViewBag.smallChurroFactory.MakeChurro()</p>
+                                <p class="card-text">@ViewBag.smallChurroFactory.getChurro()</p>
+                                <a href="" class="btn btn-outline-success btn-sm">Añadir Churro</a>
+                                <a href="" class="btn btn-outline-danger btn-sm">Eliminar Sugerencia<i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                @if (ViewBag.mediumChurroFactory != null)
+                {
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.pumpkinnspice.com/wp-content/uploads/2020/04/strawberry-french-toast-roll-ups-3-720x1080.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">@ViewBag.mediumChurroFactory.typeOfChurro()</h5>
+                                <p class="card-text">@ViewBag.mediumChurroFactory.MakeChurro()</p>
+                                <p class="card-text">@ViewBag.mediumChurroFactory.getChurro()</p>
+                                <a href="" class="btn btn-outline-success btn-sm">Añadir Churro</a>
+                                <a href="" class="btn btn-outline-danger btn-sm">Eliminar Sugerencia<i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                @if (ViewBag.largeChurroFactory != null)
+                {
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="https://1.bp.blogspot.com/-7MAqXJfy1Tc/XSS3ka3GXkI/AAAAAAAAAn0/oriZyDuFXcsJH6TIN-AAJwjiGNKVqD0ZACLcBGAs/s1600/Churros.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">@ViewBag.largeChurroFactory.typeOfChurro()</h5>
+                                <p class="card-text">@ViewBag.largeChurroFactory.MakeChurro()</p>
+                                <p class="card-text">@ViewBag.largeChurroFactory.getChurro()</p>
+                                <a href="" class="btn btn-outline-success btn-sm">Añadir Churro</a>
+                                <a href="" class="btn btn-outline-danger btn-sm">Eliminar Sugerencia<i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+</div>
